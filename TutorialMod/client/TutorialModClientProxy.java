@@ -1,6 +1,6 @@
-package fisherman77.TutorialMod.client;
+package fisherman77.tutorialmod.client;
 
-import fisherman77.TutorialMod.common.TutorialModCommonProxy;
+import fisherman77.tutorialmod.common.TutorialModCommonProxy;
 import net.minecraftforge.client.MinecraftForgeClient;
 
 public class TutorialModClientProxy extends TutorialModCommonProxy {

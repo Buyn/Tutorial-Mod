@@ -1,4 +1,4 @@
-package fisherman77.TutorialMod.common;
+package fisherman77.tutorialmod.common;
 
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
@@ -27,9 +27,12 @@ public void registerTiles(){ //For registering TileEntities
 }
 
 public void registerBlocks(){ //For registering Blocks
+//Limestone
+GameRegistry.registerBlock(TutorialMod.Limestone, "Limestone");//Needed for all blocks
+LanguageRegistry.addName(TutorialMod.Limestone, "Limestone Block");//In-game name
 }
 
 public void registerItems(){ //For registering Items
 
 }
-}  
+}
