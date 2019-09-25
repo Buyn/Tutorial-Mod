@@ -8,6 +8,7 @@ def main():
     xpos =1
     ypos =2
     colore =libtcod.green
+    old_colore =libtcod.white
 
     libtcod.console_set_custom_font('arial10x10.png', libtcod.FONT_TYPE_GREYSCALE | libtcod.FONT_LAYOUT_TCOD)
 
@@ -17,6 +18,9 @@ def main():
         libtcod.console_set_default_foreground(0, colore)
         libtcod.console_put_char(0, xpos, ypos, '@', libtcod.BKGND_NONE)
         libtcod.console_flush()
+
+        libtcod.console_set_default_foreground(0, old_colore)
+        libtcod.console_put_char(0, xpos, ypos, '@', libtcod.BKGND_NONE)
 
         key = libtcod.console_check_for_keypress()
 
